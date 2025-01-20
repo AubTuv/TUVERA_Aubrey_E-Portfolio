@@ -557,6 +557,7 @@ section .title::after {
   display: block;
   text-decoration: none;
   color: inherit;
+  margin:10px;
 }
 
 .project img {
@@ -574,7 +575,6 @@ section .title::after {
   text-align: center;
   color: #222;
   font-family: "Ubuntu", sans-serif;
-  margin:10px;
 }
 
 
