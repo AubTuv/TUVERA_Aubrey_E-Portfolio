@@ -534,7 +534,6 @@ section .title::after {
   background: #fff;
   transform: translateX(-50%);
 }
-
 .projects {
   padding: 50px 0;
   background: #fff;
@@ -546,18 +545,22 @@ section .title::after {
   justify-content: center;
 }
 
-.projects-content a {
+.project {
   flex: 1 1 calc(33.33% - 20px);
   margin: 10px;
   overflow: hidden;
   border-radius: 6px;
   transition: transform 0.3s ease;
+}
+
+.project a {
   display: block;
   text-decoration: none;
   color: inherit;
+  margin:10px;
 }
 
-.projects-content a img {
+.project img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -565,23 +568,15 @@ section .title::after {
   transition: transform 0.3s ease;
 }
 
-.projects-content a:hover {
-  transform: scale(1.05);
-}
-
-.projects-content a:hover img {
-  transform: scale(1.1);
-}
-
 .project-info {
   padding: 10px;
-  margin: 10px; /* Added 10px margin for spacing */
   background: #fe9f11;
   border-radius: 6px;
   text-align: center;
   color: #222;
   font-family: "Ubuntu", sans-serif;
 }
+
 
 .project-info h3 {
   font-size: 22px;
@@ -592,6 +587,13 @@ section .title::after {
   font-size: 16px;
 }
 
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
 
 /* footer section styling */
 footer {
