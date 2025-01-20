@@ -493,9 +493,6 @@ section .title::after {
   border: 3px solid #fe9f11;
 }
 
-.gallery-content img:hover {
-  transform: scale(1.05);
-}
 .paragraph-content p {
   text-align: center;
   margin-bottom: 10px;
