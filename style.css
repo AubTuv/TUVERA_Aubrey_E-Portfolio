@@ -543,6 +543,7 @@ section .title::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin:10px;
 }
 
 .project {
@@ -557,7 +558,6 @@ section .title::after {
   display: block;
   text-decoration: none;
   color: inherit;
-  margin: 10px;
 }
 
 .project img {
