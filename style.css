@@ -551,7 +551,7 @@ section .title::after {
   margin: 10px;
   overflow: hidden;
   border-radius: 6px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
   text-decoration: none;
   color: inherit;
@@ -562,34 +562,40 @@ section .title::after {
   height: 200px;
   object-fit: cover;
   border-radius: 6px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; 
 }
 
-.projects-content a:hover {
-  transform: scale(1.05);
-}
-
-.projects-content a:hover img {
-  transform: scale(1.1);
-}
-
-.project-info {
+.projects-content a .project-info {
   padding: 10px;
-  margin: 10px; /* Added 10px margin for spacing */
   background: #fe9f11;
   border-radius: 6px;
   text-align: center;
   color: #222;
   font-family: "Ubuntu", sans-serif;
+  transition: background 0.3s ease, transform 0.3s ease; 
 }
 
-.project-info h3 {
+.projects-content a .project-info h3 {
   font-size: 22px;
   margin-bottom: 5px;
 }
 
-.project-info p {
+.projects-content a .project-info p {
   font-size: 16px;
+}
+
+.projects-content a:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.projects-content a:hover img {
+  transform: scale(1.1); 
+}
+
+.projects-content a:hover .project-info {
+  transform: translateY(-5px); 
+  background: #f7a500; 
 }
 
 
