@@ -574,7 +574,9 @@ section .title::after {
   text-align: center;
   color: #222;
   font-family: "Ubuntu", sans-serif;
+  margin: 10px; 
 }
+
 
 .project-info h3 {
   font-size: 22px;
